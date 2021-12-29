@@ -1,0 +1,48 @@
+Matt Ely (811-653-312)
+Collins Rakowski (811-261-111)
+
+    To compile: type 'make'
+
+    To run:
+    - type './head [-c number | -n number] [filenames...]'
+    - type './tail [-c number | -n number] [filenames...]'
+    - type './wc [-clw] [filenames...]'
+    - type './true', './false'
+    - type './env'
+    - type 'make run' to test what is specified in the makefile,
+            currently it is examples testing functionality of head/tail/wc
+
+    To clean: type 'make clean'
+
+    Group Member Contributions (Matt/Collins) in estimated percent:
+    Head(75/25)
+    Tail(25/75)
+    WC(50/50)
+    True/False (100/0)
+    Env (0/100)
+    Debugging/Testing (40/60)
+    Commenting (50/50)
+
+    Detail Major Contributions:
+    Matt:
+    incorporate all error checking parameters.
+    figured out and added getopt to WC
+    wrote the option checking for wc
+    wrote the algorithm for head to read the chars and lines using read, lseek, and write
+    wrote the option cheching for tail
+    true or false were created by matt
+    each commented code we worked on
+    incorporated if else statements into any file to ensure there were errors thrown when bad files were passed
+    in WC, implemented the 'total' line if there were more than one files passed in
+    fixed valgrind memory allocation errors
+
+
+    Collins:
+    wrote the option checking for head
+    wrote the algorithm for tail to read the chars and lines
+    env was written by collins, reference code from class
+    did most of the testing and trying to break the algorithm
+    worked with teammate pretty closely to debug any errors
+    each commented code we worked on
+    incorporated code to handle multiple files as well as added headers if needed
+    figure out the option '-' to read stdin for WC
